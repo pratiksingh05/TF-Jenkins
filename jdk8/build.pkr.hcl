@@ -55,7 +55,7 @@ build {
       "chmod 700 /home/ubuntu/.ssh",
       "chmod 600 /home/ubuntu/.ssh/authorized_keys",
       "chmod u+x /tmp/install_essentials.sh",
-      "sudo bash /tmp/install_essentials.sh"
+      "sudo bash /tmp/install_essentials.sh",
       "chmod u+x /tmp/oracle-jdk.sh",
       "sudo bash /tmp/oracle-jdk.sh"
       ]
