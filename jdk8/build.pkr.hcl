@@ -40,6 +40,10 @@ build {
     source = "./install_essentials.sh"
     destination = "/tmp/install_essentials.sh"
   }
+  provisioner "file" {
+    source = "./oracle-jdk.sh"
+    destination = "/tmp/oracle-jdk.sh"
+  }
 
   # Update Linux instance to latest packages
   # Add required repos for java and jenkins
@@ -52,6 +56,8 @@ build {
       "chmod 600 /home/ubuntu/.ssh/authorized_keys",
       "chmod u+x /tmp/install_essentials.sh",
       "sudo bash /tmp/install_essentials.sh"
+      "chmod u+x /tmp/oracle-jdk.sh",
+      "sudo bash /tmp/oracle-jdk.sh"
       ]
   }
 }
