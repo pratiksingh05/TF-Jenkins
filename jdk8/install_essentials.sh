@@ -4,7 +4,7 @@ sudo apt-get update -y && sudo apt-get upgrade -y \
 echo "updrage done"
 
 #Debconf
-  sudo chmod 777 /home/ubuntu
+  #sudo chmod 777 /home/ubuntu
   echo 'debconf debconf/frontend select Noninteractive' | sudo debconf-set-selections && \
   echo 'config successfull' & \
   sudo apt-get install dialog apt-utils -y && sudo apt-get install -y -q && \
@@ -44,4 +44,6 @@ echo "updrage done"
   unzip awscliv2.zip && \
   sudo ./aws/install -i /usr/local/aws-cli -b /usr/local/bin && \
 #Install Angular cli
-  sudo npm install -g @angular/cli@11.1.2
+  sudo npm install -g @angular/cli@11.1.2 && \
+#Install Maven
+  sudo apt-get install maven -y
