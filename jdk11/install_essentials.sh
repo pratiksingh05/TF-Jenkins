@@ -1,6 +1,6 @@
 #!/usr/bin/bash -x
 
-sudo apt-get update -y && sudo apt-get upgrade -y \
+sudo apt-get update -y && sudo apt-get upgrade -y && \
 echo "updrage done"
 
 #Debconf
