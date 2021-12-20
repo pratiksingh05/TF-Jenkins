@@ -7,7 +7,7 @@ source "amazon-ebs" "aws" {
   region        = "us-east-1"
   launch_block_device_mappings {
     device_name = "/dev/sda1"
-    volume_size = 60
+    volume_size = 120
     volume_type = "gp2"
     delete_on_termination = true
   }
